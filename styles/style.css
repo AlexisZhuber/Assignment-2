@@ -1,0 +1,82 @@
+:root {
+  --primary-color: #4d455d;
+  --secondary-color: #e96479;
+  --tertiary-color: #f5e9cf;
+  --fourth-color: #7db9b6;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-size: 16px;
+  font-size: 1em;
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+}
+
+header {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.4em;
+  color: var(--tertiary-color);
+}
+
+main {
+  overflow: hidden;
+  font-size: 1.3em;
+  color: var(--tertiary-color);
+}
+
+main p {
+  transition: transform 0.3s ease;
+}
+
+main p:hover {
+  font-family: "Nova Flat", sans-serif;
+  transform: scale(1.5);
+  color: var(--secondary-color);
+}
+
+#progress {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 6px;
+  background: var(--tertiary-color);
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: var(--secondary-color);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--tertiary-color);
+  box-shadow: 0 5px 5px rgba(233, 100, 121, 0.22);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls div {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  background: var(--tertiary-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--secondary-color);
+  box-shadow: 0 10px 20px rgba(233, 100, 121, 0.22);
+  cursor: pointer;
+}
+
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    background: var(--secondary-color);
+    color: var(--tertiary-color);
+}

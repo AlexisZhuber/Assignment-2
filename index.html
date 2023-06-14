@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preload" as="style" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <link rel="shortcut icon" href="img/heart.png" type="image/x-icon">
+
+    <title>After Dark</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500&family=Nova+Flat&family=Prompt:ital,wght@0,100;1,100&family=Snippet&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <header>
+        <section class="audio-player">
+            <audio id="song">
+                <source src="audio/afterdark.mp3" type="audio/mp3">
+            </audio>
+        
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i onclick="less()" class="fa-solid fa-backward" id="lessIcon"></i></div>
+                <div><i onclick="playPause()" class="fa-solid fa-play" id="controlIcon"></i></div>
+                <div><i onclick="more()" class="fa-solid fa-forward" id="moreIcon"></i></div>
+            </div>
+        </section>
+
+        <h1>Mr.Kitty - After Dark</h1>
+    </header>
+    <main class="song">
+        <p>I see you</p><br>
+        <p>You see me</p><br>
+        <p>How pleasant</p><br>
+        <p>This feeling</p><br>
+        <p>The moment</p><br>
+        <p>You hold me</p><br>
+        <p>I missed you</p><br>
+        <p>I'm sorry</p><br>
+        <p>I've given</p><br>
+        <p>What I have</p><br>
+        <p>I showed you</p><br>
+        <p>I'm growing</p><br>
+        <p>The ashes</p><br>
+        <p>Fall slowly</p><br>
+        <p>As your voice</p><br>
+        <p>Consoles me</p><br>
+        <p>As the hours pass</p><br>
+        <p>I will let you know</p><br>
+        <p>That I need to ask</p><br>
+        <p>Before I'm alone</p><br>
+        <p>How it feels to rest</p><br>
+        <p>On your patient lips</p><br>
+        <p>To eternal bliss</p><br>
+        <p>I'm so glad to know</p><br>
+        <p>As the hours pass</p><br>
+        <p>I will let you know</p><br>
+        <p>That I need to ask</p><br>
+        <p>Before I'm alone</p><br>
+        <p>How it feels to rest</p><br>
+        <p>On your patient lips</p><br>
+        <p>To eternal bliss</p><br>
+        <p>I'm so glad to know</p><br>
+        <p>We're swaying</p><br>
+        <p>To drum beats</p><br>
+        <p>In motion</p><br>
+        <p>I'm feeling</p><br>
+        <p>My patience</p><br>
+        <p>Controlling</p><br>
+        <p>The question</p><br>
+        <p>I won't speak</p><br>
+        <p>We're telling</p><br>
+        <p>The stories</p><br>
+        <p>Our laughter</p><br>
+        <p>He knows me</p><br>
+        <p>We're leaving</p><br>
+        <p>We're talking</p><br>
+        <p>You're closer</p><br>
+        <p>It's calming</p><br>
+        <p>As the hours pass</p><br>
+        <p>I will let you know</p><br>
+        <p>That I need to ask</p><br>
+        <p>Before I'm alone</p><br>
+        <p>How it feels to rest</p><br>
+        <p>On your patient lips</p><br>
+        <p>To eternal bliss</p><br>
+        <p>I'm so glad to know</p><br>
+        <p>As the hours pass</p><br>
+        <p>I will let you know</p><br>
+        <p>That I need to ask</p><br>
+        <p>Before I'm alone</p><br>
+        <p>How it feels to rest</p><br>
+        <p>On your patient lips</p><br>
+        <p>To eternal bliss</p><br>
+        <p>I'm so glad to know</p><br>
+        <p>The night will hold us close</p><br>
+        <p>And the stars will guide us home</p><br>
+        <p>I've been waiting for this moment</p><br>
+        <p>We're finally alone</p><br>
+        <p>I turn to ask the question</p><br>
+        <p>So anxious, my thoughts</p><br>
+        <p>Your lips were soft like winter</p><br>
+        <p>In your passion, I was lost</p><br>
+        <p>As the hours pass</p><br>
+        <p>I will let you know</p><br>
+        <p>That I need to ask</p><br>
+        <p>Before I'm alone</p><br>
+        <p>How it feels to rest</p><br>
+        <p>On your patient lips</p><br>
+        <p>To eternal bliss</p><br>
+        <p>I'm so glad to know</p><br>
+        <p>As the hours pass</p><br>
+        <p>I will let you know</p><br>
+        <p>That I need to ask</p><br>
+        <p>Before I'm alone</p><br>
+        <p>How it feels to rest</p><br>
+        <p>On your patient lips</p><br>
+        <p>To eternal bliss</p><br>
+        <p>I'm so glad to know</p><br>
+        <p>As the hours pass</p><br>
+        <p>I will let you know</p><br>
+        <p>That I need to ask</p><br>
+        <p>Before I'm alone</p><br>
+        <p>How it feels to rest</p><br>
+        <p>On your patient lips</p><br>
+        <p>To eternal bliss</p><br>
+        <p>I'm so glad to know</p><br>
+        <p>As the hours pass</p><br>
+        <p>I will let you know</p><br>
+        <p>That I need to ask</p><br>
+        <p>Before I'm alone</p><br>
+        <p>How it feels to rest</p><br>
+        <p>On your patient lips</p><br>
+        <p>To eternal bliss</p><br>
+        <p>I'm so glad to know</p><br>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
